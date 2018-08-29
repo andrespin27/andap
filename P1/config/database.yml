@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: development.
+  database: development_
   username: postgres
   password: sala2
   host: localhost
@@ -22,12 +22,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test
+  database: test_
   username: postgres
   password: sala2
   host: localhost
   
 production:
   <<: *default
-  database: production
+  database: production_
   
