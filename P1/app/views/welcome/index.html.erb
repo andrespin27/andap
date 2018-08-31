@@ -1,11 +1,12 @@
-<header class="ap-head">
-<div class="ap-logo"></div>
-<div class="menu"></div>
-</header>
-<div class="ap-content">
-<h1>Cuerpo de la Pagina</h1>
-</div>
-<footer class="ap-pie">
+<h1>ImageGram</h1>
 
-</footer>
+<% if user_signed_in? %>
+
+<h3>Bienvenido! <%= current_user.email %> </h3>
+
+<% else %>
+
+<p> por favor inicia sesión para ver imagenes </p>
+
+<% end %>
 
